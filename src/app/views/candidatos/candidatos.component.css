@@ -1,0 +1,21 @@
+
+    
+     .titulo{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(67, 67, 110);
+    }
+    .card{
+    padding-top: 50px;
+    width: auto;     
+    }
+   .candidatos{
+   flex-direction: row;
+   }
+   
+   .imagem{
+    height:380px;
+    width: 450px;
+   }

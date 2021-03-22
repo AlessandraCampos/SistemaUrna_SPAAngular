@@ -1,0 +1,11 @@
+.candidatovoto{
+    width: 700px;
+    height: 550px;
+padding-left: 300px;
+}
+.candidato-title{
+    color:blue;
+    padding-top: 100px;
+    padding-left: 200px;
+    align-content: center;
+}

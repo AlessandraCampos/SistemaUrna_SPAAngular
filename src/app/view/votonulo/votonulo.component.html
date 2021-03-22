@@ -1,0 +1,21 @@
+<div class="candidatovoto" *ngIf="votobranco">
+    <mat-card class="candidatovoto" mat-elevation-z3>
+           <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title class="candidato-title">Confira seu candidato <br>Você votou em Branco :</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image class="imagem" src="./assets/img/votobranco.jpeg" alt="Foto do candidato">
+                               
+    </mat-card>
+  </div>
+<div class="candidatovoto">
+    <mat-card class="candidatovoto" *ngIf="votonulo" mat-elevation-z3>
+           <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title class="candidato-title" >Fim da Votação <br>Você votou Nulo : </mat-card-title>
+              </mat-card-header>
+            <img mat-card-image class="imagem" src="./assets/img/voto_nulo.jpeg" alt="Foto do candidato">
+                               
+    </mat-card>
+</div>
+

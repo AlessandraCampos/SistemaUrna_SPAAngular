@@ -1,0 +1,42 @@
+.example-card {
+    max-width: 400px;
+  }
+  .form{
+     display: flex;
+     flex-direction: column;
+     width: 700px;
+    
+
+  }
+  .first-card{
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+  }
+  
+  .example-header-image {
+     background-size: cover;
+  }
+  .botoes{
+     margin-top: 20px;
+  }
+  
+.btn-salvar{
+   margin-left: 10px;
+   width: 50px;
+}
+.btn-cancelar{
+   margin-left: 10px;
+
+}
+.formulario {
+   padding-left: 20px;
+
+}
+.titulo{
+   font-family:sans-serif,Arial, Helvetica;
+   color:grey;
+   font-weight: 300;
+   padding: 20px;
+   
+}

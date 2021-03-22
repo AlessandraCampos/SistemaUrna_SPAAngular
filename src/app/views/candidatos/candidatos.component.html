@@ -1,0 +1,16 @@
+
+     <mat-grid-list cols="3" rowHeight="300px" style="height:250px" gutterSize="10px">
+      <mat-grid-tile *ngFor="let candidato of candidatos">
+        <mat-card class="card" >
+         
+         <br>
+        <img mat-card-image class="imagem" src='{{candidato.imagem}}' alt="Foto candidato"title='{{candidato.nome}}'>
+       </mat-card>  
+      </mat-grid-tile>
+     
+    </mat-grid-list>
+
+       
+
+      
+       

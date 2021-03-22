@@ -1,0 +1,46 @@
+{
+  "candidatos": [
+    {
+      "id": 100,
+      "nome": "Tiririca",
+      "partido": "PR",
+      "numero": 2222,
+      "imagem": "https://cdn-eleicoes.gazetadopovo.com.br/santinhos/sao-paulo/deputado-federal/santinho-deputado-federal-tiririca-2222-sao-paulo.jpg"
+    },
+    {
+      "id": 200,
+      "nome": "Thammy Miranda",
+      "partido": "PSDB",
+      "numero": 22000,
+      "imagem": "http://guiagaysaopaulo.com.br/public/uploads/imagens/originais/noticia-foto/tammy_miranda_politico_camara_vereadores.jpg?width=600&height=400&cp=1"
+    },
+    {
+      "id": 300,
+      "nome": "Jorge Kajuru Reis ",
+      "partido": "PRP",
+      "numero": 444,
+      "imagem": "https://cdn-eleicoes.gazetadopovo.com.br/santinhos/goias/senador/santinho-senador-jorge-kajuru-goias.jpg"
+    },
+    {
+      "nome": "Marcelinho Carioca",
+      "partido": "PPT",
+      "numero": "545",
+      "imagem": "https://cdn-eleicoes.gazetadopovo.com.br/santinhos/sao-paulo/deputado-estadual/santinho-deputado-estadual-marcelinho-carioca-19000-sao-paulo.jpg",
+      "id": 301
+    },
+    {
+      "nome": "Romario",
+      "partido": "PPS",
+      "numero": "19",
+      "imagem": "https://pbs.twimg.com/media/DkwfVSFW4AAqmSw.jpg",
+      "id": 302
+    },
+    {
+      "nome": "Castro Alves da Fonseca",
+      "partido": "PML",
+      "numero": "92929",
+      "imagem": "https://cleoci.files.wordpress.com/2010/08/image0024.jpg",
+      "id": 303
+    }
+  ]
+}

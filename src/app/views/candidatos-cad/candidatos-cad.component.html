@@ -1,0 +1,37 @@
+<form [formGroup]="control" ngSubmited="createCandidato()"class="formulario" >
+<mat-card class= "first-card">
+  <mat-card-title class="titulo">Cadastre seu candidato</mat-card-title>
+ <p>
+    <mat-form-field class="form">
+      <mat-label>Nome do Candidato</mat-label>
+      <input matInput placeholder="Nome do candidato *" [(ngModel)]="candidato.nome" name="nome" formControlName="nome">
+          <mat-error>Preencha o nome do candidato - Min 10 caracteres</mat-error>
+           </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field class="form">
+      <mat-label>Partido</mat-label>
+      <input matInput placeholder="Utilize as Iniciais *" [(ngModel)]="candidato.partido" name="partido" formControlName="partido">
+      <mat-error>Preencha o partido - Max 15 caracteres</mat-error>
+         </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field class="form">
+      <mat-label>Número da Legenda</mat-label>
+      <input matInput placeholder="Número no TRE *"[(ngModel)]="candidato.numero" name="numero" name="partido" formControlName="numero">
+      <mat-error>Preencha o número do candidato - Max 5 caracteres</mat-error>
+       </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field class="form">
+      <mat-label>Link da Imagem</mat-label>
+      <input matInput placeholder="Cole aqui" *ngIf="candidato !=null"[(ngModel)]="candidato.imagem" name="imagem"  formControlName="imagem">
+      </mat-form-field>
+  </p>
+ 
+
+  <div class ="botoes">
+    <button class="btn-cancelar" mat-raised-button color="primary"(click)="cancel()" >Cancelar</button>
+    <button class= "btn-salvar" mat-raised-button color="accent"(click)="createCandidato()">Salvar</button>
+  </div>
+</mat-card>

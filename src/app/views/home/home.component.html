@@ -1,0 +1,82 @@
+<mat-card class="home mat-elevation-z3">
+    <mat-card-title class="title">
+     Bem Vindo ao Sistema de Votação
+    </mat-card-title>
+    <mat-card-subtitle class="subtitle">
+    Vote consciente
+    </mat-card-subtitle>
+</mat-card>
+
+<div class="container">
+
+    <mat-card class= "card-candidato mat-elevation-z3">
+    <mat-card-title class="escolha">
+    Digite o número do seu candidato
+    </mat-card-title>
+    <div class="numero-candidato" >
+      <input class="cand" [(ngModel)]="numeroAtual" name="numeroAtual" (ngModelChange)="digitar($event)" autofocus  type="text">
+      
+    
+    </div>
+
+<div class="teclado">
+    
+    <div class="example-button-row">
+    <button mat-stroked-button class="botoes" (click)="clicar(1)">1</button>
+    <button mat-stroked-button class="botoes"(click)="clicar(2)">2</button>
+    <button mat-stroked-button class="botoes"(click)="clicar(3)">3</button>
+    </div>
+    <div class="example-button-row">
+    <button mat-stroked-button class="botoes" (click)="clicar(4)">4</button>
+    <button mat-stroked-button class="botoes"(click)="clicar(5)">5</button>
+    <button mat-stroked-button class="botoes"(click)="clicar(6)">6</button>
+    </div>
+    <div class="example-button-row">
+    <button mat-stroked-button class="botoes"(click)="clicar(7)">7</button>
+    <button mat-stroked-button class="botoes"(click)="clicar(8)">8</button>
+    <button mat-stroked-button class="botoes"(click)="clicar(9)">9</button>
+   </div>
+   <div class="example-button-row">
+   <button mat-stroked-button class="botoes"(click)="clicar(0)" >0</button>
+   </div>
+   <section class="btn-controle">
+    <div class="example-button-row">
+    <button mat-flat-button class="btn-branco"(click)="branco()">Branco</button>
+    <button mat-flat-button class="btn-corrige"(click)="corrigir()">Corrige</button>
+    <button mat-flat-button class="btn-confirma"(click)="salvar(votos)" >Confirma</button>
+    </div>
+  </section>
+</div>
+</mat-card>
+   
+ <div class="show-candidato" >
+        <mat-card class="voto-candidato" *ngIf="candidato" mat-elevation-z3>
+               <mat-card-header>
+                  <div mat-card-avatar class="example-header-image"></div>
+                  <mat-card-title class="candidato-title">Confira seu candidato</mat-card-title>
+                  <mat-card-subtitle>Candidato: {{candidato.nome}}</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image class="imagem" src="{{candidato.imagem}}" alt="Foto do candidato">
+                                   
+        </mat-card>
+ </div>
+ <div class="show-candidato" *ngIf="votobranco">
+  <mat-card class="voto-candidato" mat-elevation-z3>
+         <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title class="candidato-title">Confira seu candidato</mat-card-title>
+            <mat-card-subtitle>Você votou em branco</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image class="imagem" src="./assets/img/votobranco.jpeg" alt="Foto do candidato">
+                             
+  </mat-card>
+</div>
+
+
+
+
+
+
+
+
+
